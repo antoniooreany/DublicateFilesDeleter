@@ -14,7 +14,7 @@ public class DublicateFilesDeleter {
         */
 
         long timeMillis0 = System.currentTimeMillis();
-        deleteDublicateFiles(new File("D:\\Old_D — копия\\txts\\"));
+        deleteDublicateFiles(new File("D:\\Old_D — копия\\docs\\"));
         long timeMillis1 = System.currentTimeMillis();
         System.out.println(timeMillis1 - timeMillis0);
     }
@@ -52,7 +52,7 @@ public class DublicateFilesDeleter {
                     equalFilesCount = 0;
                 }
                 filesChecked++;
-                Runtime.getRuntime().exec("cls");
+//                Runtime.getRuntime().exec("cls");
                 System.out.println("Checking:  " + absolutePath0);
                 System.out.println("Checked:   " + filesChecked);
                 System.out.println("Deleted:   " + filesDeleted);
